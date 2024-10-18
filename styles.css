@@ -2,25 +2,42 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    max-width;: 0.6vw;
-    display: block;
-    max-height: 1vw;
+  }
+
+  h2 {
+    font-size: 50px;
   }
   
+  #app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertical centering */
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: black;
+  }
+
   #title {
     text-align: center;
+    color: rgb(0, 0, 0);
   }
   
   #session-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40vw;
     margin: 30px 100px 30px 100px;
     padding: 10px 0px 30px 0px;
     border-width: 1rem;
     border-radius: 20px;
     border: solid;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgb(73, 73, 73);
+    font-size: 25px;
   }
   
   #session-container #session-length {
@@ -28,31 +45,41 @@ body {
   
   #session-container #session-increment,
   #session-decrement {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 2px;
+    border-radius: 50%;
+    font-size: 25px;
   }
   
-  #session-container #session-decrement {
+  #session-container #session-length, #break-container #break-length, #timer-container #time-left {
+    font-size: 30px;
+    margin: 20px 0;
   }
   
   #break-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40vw;
     margin: 30px 100px 30px 100px;
     padding: 10px 0px 30px 0px;
     border-width: 1rem;
     border-radius: 20px;
     border: solid;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgb(73, 73, 73);
+    font-size: 25px;
   }
   
   #break-container #break-increment,
   #break-decrement {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 2px;
+    border-radius: 50%;
+    font-size: 25px;
   }
   
   #timer-container {
@@ -60,10 +87,27 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 5px;
+    padding: 20px 0;
+    background-color: rgb(75, 75, 75);
+    width: 20vw;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+  }
+
+  #timer-container #timer-label {
+    font-size: 25px;
   }
   
   #timer-container #timer-label, #time-left, #start_stop, #reset {
     margin: 5px;
+    border-radius: 20px;
+    font-size: 25px;
+    height: 60px;
+    margin: 15px;
+    padding: 15px;
   }
   
   #sub-title {
@@ -74,4 +118,21 @@ body {
     display: flex;
     flex-direction: row;
   }
+
+  @media screen and (max-width: 1000px)
+  {
+    #session-container {
+      width: 90vw;
+    }
+
+    #break-container {
+      width: 90vw;
+    }
+
+    #timer-container {
+      width: 60vw;
+    }
+
+  }    
+  
   
