@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: lightblue;
   }
 
   h2 {
@@ -112,6 +113,7 @@ body {
   
   #sub-title {
     text-align: center;
+    color: white;
   }
   
   .button-container {
