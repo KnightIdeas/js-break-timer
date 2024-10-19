@@ -12,12 +12,13 @@ h2 {
 #app-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertical centering */
+  align-items: center;
   padding: 0;
   flex-direction: column;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
   background-color: black;
+  overflow-y: auto; /* Allow scrolling on overflow */
 }
 
 #title {
